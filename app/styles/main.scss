@@ -1,0 +1,27 @@
+$energized: #26C281 !default;
+@import "scss/ionic";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+#home{
+  .formula-enter-content {
+    label {
+      @include border-radius(10px);
+    }
+    i{
+      font-size: 21px;
+    }
+    input[type=text]{
+      color:#666;
+    }
+  }
+}
+.bar-energized h1{
+  font-weight: bold;
+  letter-spacing: 2px;
+}
