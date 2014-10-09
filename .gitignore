@@ -53,7 +53,7 @@ IOS/www/
 node_modules/
 .tmp
 .sass-cache
-app/bower_components
+app/lib
 platforms/
 resources/
 plugins
