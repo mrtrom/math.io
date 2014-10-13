@@ -8886,4 +8886,33 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   font-weight: bold;
   letter-spacing: 2px; }
 
+.no-padding {
+  padding: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.no-border {
+  border: none; }
+
+#keyboard {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background: #EEE;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s; }
+  #keyboard input[type=button] {
+    color: #000; }
+
+.keyboard-shown {
+  top: 35% !important; }
+
+.keyboard-hidden {
+  top: 100% !important; }
+
 /*# sourceMappingURL=main.css.map */

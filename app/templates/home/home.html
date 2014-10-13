@@ -1,10 +1,13 @@
 <ion-view title="HOME">
-  <ion-content class="has-header padding">
-    <div class="formula-enter-content">
-      <label class="item item-input">
-        <i class="icon ion-search placeholder-icon"></i>
-        <input type="text" placeholder="Tap to solve your math problem">
-      </label>
+  <ion-content class="has-header" scroll="false">
+    <div class="padding">
+      <div class="formula-enter-content">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <label ng-click="showKeyboard()">Tap to solve your math problem</label>
+        </label>
+      </div>
     </div>
+    <app-keyboard-dir></app-keyboard-dir>
   </ion-content>
 </ion-view>

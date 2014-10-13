@@ -8,6 +8,22 @@ $energized: #26C281 !default;
   border-radius: $radius;
 }
 
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
 #home{
   .formula-enter-content {
     label {
@@ -24,4 +40,31 @@ $energized: #26C281 !default;
 .bar-energized h1{
   font-weight: bold;
   letter-spacing: 2px;
+}
+.no-padding{
+  padding:0;
+}
+.no-margin{
+  margin:0;
+}
+.no-border{
+  border:none;
+}
+#keyboard{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background: #EEE;
+  @include transition(top 1s);
+
+  input[type=button]{
+    color:#000;
+  }
+}
+.keyboard-shown{
+  top: 35% !important;
+}
+.keyboard-hidden{
+  top: 100% !important;
 }
