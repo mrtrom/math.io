@@ -8910,7 +8910,7 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
     color: #000; }
 
 .keyboard-shown {
-  top: 35% !important; }
+  top: 25% !important; }
 
 .keyboard-hidden {
   top: 100% !important; }
